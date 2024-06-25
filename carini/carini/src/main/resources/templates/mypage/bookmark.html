@@ -7,12 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="/css/bookmark.css" />
 	<link rel="stylesheet" href="/css/base.css" />
+	<link rel="stylesheet" href="/css/pop.js" />
+	<script src="/src/main/resources/static/script/popup.js"></script>
 	<noscript>
 		<link rel="stylesheet" th:href="@{/assets/css/noscript.css}" />
 	</noscript>
+	
 </head>
 
 <body>
+	
+	
+	<div th:replace="~{base/base :: pop}"></div>
 
 	<div id="page-wrapper">
 		<div th:replace="~{base/base :: header}"></div>

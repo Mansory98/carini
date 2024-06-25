@@ -358,7 +358,6 @@ body {
 	margin-top: 18px;
 	display: block;
 	margin-right: 15px
-
 }
 
 #float_icons img {
@@ -635,17 +634,66 @@ footer img {
 	}
 
 	h2 {
-		fongt-size: 1.25em
+		font-size: 1.25em
 	}
 }
 
-#content {
-	height: 300px
-}
 
-.side-hver:hover {
-	color: #fff !important;
-	background-color: #000 !important;
-	border-radius: .5rem;
-	padding: 1.5%
-}
+	.popup_hidden {
+		display: none;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+		height: 200px;
+		background-color: white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		z-index: 10000;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.popup {
+		display: block;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 300px;
+		height: 200px;
+		background-color: white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		z-index: 10010;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.popup-overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+	}
+
+	.popup-overlay.active {
+		display: block;
+	}
+
+	#close-popup,
+	#close-popup2,
+	#close-popup3 {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background: none;
+		border: none;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+
